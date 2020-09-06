@@ -12,24 +12,24 @@ Simply delete the folder from your "Community" folder.
 ## Previews
 
 ### cppr-nameplates-small-blue
-(docs/cppr-nameplates-small-blue_day.png)
-(docs/cppr-nameplates-small-blue_night.png)
+![Preview cppr-nameplates-small-blue_day](docs/cppr-nameplates-small-blue_day.png)
+![Preview cppr-nameplates-small-blue_night](docs/cppr-nameplates-small-blue_night.png)
 
 ### cppr-nameplates-small-green
-(docs/cppr-nameplates-small-green_day.png)
-(docs/cppr-nameplates-small-green_night.png)
+![Preview cppr-nameplates-small-green_day](docs/cppr-nameplates-small-green_day.png)
+![Preview cppr-nameplates-small-green_night](docs/cppr-nameplates-small-green_night.png)
 
 ### cppr-nameplates-small-orange
-(docs/cppr-nameplates-small-orange_day.png)
-(docs/cppr-nameplates-small-orange_night.png)
+![Preview cppr-nameplates-small-orange_day](docs/cppr-nameplates-small-orange_day.png)
+![Preview cppr-nameplates-small-orange_night](docs/cppr-nameplates-small-orange_night.png)
 
 ### cppr-nameplates-small-red
-(docs/cppr-nameplates-small-red_day.png)
-(docs/cppr-nameplates-small-red_night.png)
+![Preview cppr-nameplates-small-red_day](docs/cppr-nameplates-small-red_day.png)
+![Preview cppr-nameplates-small-red_night](docs/cppr-nameplates-small-red_night.png)
 
 ### cppr-nameplates-small-original
-(docs/cppr-nameplates-small-original_day.png)
-(docs/cppr-nameplates-small-original_night.png)
+![Preview cppr-nameplates-small-original_day](docs/cppr-nameplates-small-original_day.png)
+![Preview cppr-nameplates-small-original_night](docs/cppr-nameplates-small-original_night.png)
 
 
 ## Changelog
