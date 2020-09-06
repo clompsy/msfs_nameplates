@@ -1,5 +1,11 @@
 # MSFS modified traffic nameplates
-V1.1
+Summary of modifications to make the traffic nameplates in Microsoft Flight Simulator 2020 smaller and less intrusive.
+Changes include:
+- Reduced fontsize
+- Font is changed to a more readable one (Roboto)
+- Removed useless margins/paddings
+- No more dark background square (except for the "original" variant)
+- A thin white shine around the text to make it readable at night
 
 ## Installation
 Place the folder of one(!) desired variant of the nameplates in your "Community" folder.
@@ -34,8 +40,8 @@ Simply delete the folder from your "Community" folder.
 
 ## Changelog
 
-### 1.1
+### v1.1
 - Updated the version to work with MSFS patch 1.7.14.0
 
-### 1.0
+### v1.0
 - Initial version
