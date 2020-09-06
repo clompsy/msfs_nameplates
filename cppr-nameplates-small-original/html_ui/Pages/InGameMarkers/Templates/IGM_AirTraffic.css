@@ -1,0 +1,107 @@
+﻿/** This mixin makes a single line element fit exactly on the Roboto font for easier integration. */
+@font-face {
+  font-family: "Roboto";
+  src: url("/Fonts/RobotoMono-Medium.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; 
+}
+
+igm-airtraffic-3d {
+  /* layout */
+  --scalefactor: 0.7; /* general size of nameplate */
+  --scalefactor-text: 0.7; /* text size factor (depending on font this might be different than general factor) */
+  --scalefactor-separator: 0.1; /* vertial spacing between name and details */
+  --detail-separator-display: block; /* Separator line between aircraft type, origin airport, altitude. Values: block, none */
+  --detail-separator-spacingfactor: 0.1; /* Space of separation between aircraft type, origin airport, altitude */
+  opacity: 1;
+
+  /* font */
+  --font-size: calc(var(--fontSizeParagraph) * var(--scalefactor-text)); /* Size of font for both, name and details */
+  font-size: var(--font-size);
+  font-family: Roboto; /* Override default font (defined above) */
+
+  /* colors for text and background */
+  --name-background: var(--backgroundColorPanel); /* set to var(--backgroundColorPanel) if background shall be shown */
+  /* color: #7a1614; */ /* color of text */
+  --detail-separator-color: white; /* color of vertical line separating the details */
+  text-shadow: 0px 0px calc(var(--screenHeight) * (2px / 2160)) rgba(0, 0, 0, 0.4); /* "shine" of text to have better contrast to background (should be dark for light font color and bright for dark font color) */
+
+  /* others */
+  display: flex;
+  width: calc(var(--scalefactor) * var(--screenHeight) * (588px / 2160)); /* modified to fit the other font */
+  height: calc(var(--scalefactor) * var(--screenHeight) * (120px / 2160));
+  overflow: hidden;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin: 1px;
+  --igmTextShadow: 0px 0px calc(var(--scalefactor) * var(--screenHeight) * (24px / 2160)) rgba(0, 0, 0, 0.4);
+}
+igm-airtraffic-3d .name {
+  display: block;
+  width: 100%;
+  padding: calc(var(--scalefactor) * var(--screenHeight) * (4px / 2160)) 0 calc(var(--scalefactor) * var(--screenHeight) * (4px / 2160)) 0;
+  font-size: var(--font-size);
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase; 
+}
+igm-airtraffic-3d.detailed .name {
+  background: var(--name-background);
+  margin-bottom: calc(var(--scalefactor-separator) * var(--screenHeight) * (20px / 2160)); 
+}
+igm-airtraffic-3d.detailed .data {
+  opacity: 1; 
+}
+igm-airtraffic-3d:not(.detailed) .name {
+  /* text-shadow: var(--igmTextShadow); */ /* disabled since global shadow defined */
+}
+igm-airtraffic-3d .data {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  opacity: 0; 
+}
+igm-airtraffic-3d .data span {
+  white-space: nowrap;
+  /* text-shadow: var(--igmTextShadow); */ /* disabled since global shadow defined */
+}
+igm-airtraffic-3d .data-item {
+  display: flex;
+  justify-content: center;
+  text-transform: uppercase;
+  flex: 1 1 auto;
+  max-width: 25%;
+  white-space: nowrap;
+  text-overflow: ellipsis; 
+}
+igm-airtraffic-3d .data-item > span.unit {
+  text-transform: none; 
+}
+igm-airtraffic-3d .data-item[data-type="PLANE_ALTITUDE"] span.unit, igm-airtraffic-3d .data-item[data-type="PLANE_SPEED"] span.unit {
+  /* display: block;
+  margin-left: calc(var(--scalefactor) * var(--screenHeight) * (8px / 2160));  */
+}
+igm-airtraffic-3d .data-item[data-type="PLANE_TYPE"] {
+  justify-content: flex-start; /* Set type to be left-aligned for better balance */
+}
+igm-airtraffic-3d .data-item[data-type="PLANE_ALTITUDE"] {
+  /* flex: 1 1 calc(var(--scalefactor) * var(--screenHeight) * (130px / 2160)); */
+  max-width: 35%;
+  justify-content: flex-end;
+  text-transform: lowercase;
+}
+igm-airtraffic-3d .data .separator {
+  display: var(--detail-separator-display);
+  width: var(--minimalBorderWidth);
+  height: calc(var(--scalefactor) * var(--screenHeight) * (44px / 2160));
+  background: var(--detail-separator-color);
+  margin: 0 calc(var(--detail-separator-spacingfactor) * var(--screenHeight) * (20px / 2160)) 0 calc(var(--detail-separator-spacingfactor) * var(--screenHeight) * (20px / 2160)); 
+}
+igm-airtraffic-3d .data.condensed {
+  justify-content: space-between; 
+}
+igm-airtraffic-3d .data.condensed .separator {
+  margin: 0; 
+}

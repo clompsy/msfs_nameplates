@@ -1,0 +1,21 @@
+{
+  "dependencies": [
+    {
+      "name": "fs-base-ui",
+      "package_version": "0.1.10"
+    }
+  ],
+  "content_type": "CORE",
+  "title": "",
+  "manufacturer": "",
+  "creator": "coppersens",
+  "package_version": "1.1.40",
+  "minimum_game_version": "1.7.13",
+  "release_notes": {
+    "neutral": {
+      "LastUpdate": "",
+      "OlderHistory": ""
+    }
+  },
+  "total_package_size": "00000000000000004803"
+}
