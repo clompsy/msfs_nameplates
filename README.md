@@ -23,6 +23,10 @@ A restart of MSFS is required to see the effect.
 After a patch for MSFS, the sim not immediately loads the Community folder, so one or more restarts are required. This applies on all mods, not this one in particular.
 MSFS patch 1.8.3.0 introduced some bug which hides details on nameplates randomly. Sometimes switching the Graphics settings for "generic" models to on/off restores the details.
 
+## Recommendations
+This modification is tested to work well with the updated UIMOD "uimod-mugz-hiddenui" (https://github.com/mixMugz/msfs2020-uimod) which I can highly recommend to have a key toggle to hide the nameplates.
+Note that in order for the cppr-nameplates to work, you may not use the UIMOD "uimod-mugz-tinyplates" since both modify the appearance of the nameplates.
+
 ## Uninstallation
 Simply delete the folder from your "Community" folder.
 
@@ -57,6 +61,10 @@ Simply delete the folder from your "Community" folder.
 
 
 ## Changelog
+
+### v2.1
+- Added support of UIMOD "uimod-mugz-hiddenui" (https://github.com/mixMugz/msfs2020-uimod)
+- Updated manifest for mod to show up correctly in content manager
 
 ### v2.0
 - Added new v2 version (only green available) with better readability.

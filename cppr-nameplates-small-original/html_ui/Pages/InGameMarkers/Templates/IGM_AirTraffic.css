@@ -6,6 +6,12 @@
   font-style: normal; 
 }
 
+:root {
+  /* Needed to support UIMOD toggle compatibility */
+  --tgl-block: block;
+  --tgl-flex: flex;
+}
+
 igm-airtraffic-3d {
   /* layout */
   --scalefactor: 0.7; /* general size of nameplate */
@@ -27,7 +33,7 @@ igm-airtraffic-3d {
   text-shadow: 0px 0px calc(var(--screenHeight) * (2px / 2160)) rgba(0, 0, 0, 0.4); /* "shine" of text to have better contrast to background (should be dark for light font color and bright for dark font color) */
 
   /* others */
-  display: flex;
+  display: var(--tgl-flex);
   width: calc(var(--scalefactor) * var(--screenHeight) * (588px / 2160)); /* modified to fit the other font */
   height: calc(var(--scalefactor) * var(--screenHeight) * (120px / 2160));
   overflow: hidden;

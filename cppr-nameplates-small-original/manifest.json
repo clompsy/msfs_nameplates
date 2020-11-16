@@ -5,11 +5,11 @@
       "package_version": "0.1.10"
     }
   ],
-  "content_type": "CORE",
-  "title": "",
+  "content_type": "CUSTOM",
+  "title": "cppr-nameplates",
   "manufacturer": "",
   "creator": "coppersens",
-  "package_version": "1.1.40",
+  "package_version": "2.1.0",
   "minimum_game_version": "1.7.13",
   "release_notes": {
     "neutral": {
@@ -17,5 +17,5 @@
       "OlderHistory": ""
     }
   },
-  "total_package_size": "00000000000000004803"
+  "total_package_size": "00000000000000004425"
 }
