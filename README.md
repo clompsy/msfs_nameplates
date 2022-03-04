@@ -62,6 +62,9 @@ Simply delete the folder from your "Community" folder.
 
 ## Changelog
 
+### v2.3
+- Fixed issue when using UIMOD "uimod-mugz-hiddenui" (https://github.com/mixMugz/msfs2020-uimod) in latest version that caused nameplates not being hidden properly. Make sure to use the latest version of the UIMOD (v1.21.18.1 or later).
+
 ### v2.2
 - Fixed issue when using UIMOD "uimod-mugz-hiddenui" (https://github.com/mixMugz/msfs2020-uimod) in latest version that caused nameplates not being hidden properly. Make sure to use the latest version of the UIMOD (v1.12.13.0 or later).
 

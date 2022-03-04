@@ -8,8 +8,7 @@
 
 :root {
   /* Needed to support UIMOD toggle compatibility */
-  --igm-block: block;
-  --igm-flex: flex;
+  --igm-vis: visible; /* Default state for visible */
 }
 
 igm-airtraffic-3d {
@@ -33,7 +32,8 @@ igm-airtraffic-3d {
   --detail-separator-color: #147a28; /* color of vertical line separating the details */
 
   /* others (do not modify) */
-  display: var(--igm-flex);
+  display: flex;
+  visibility: var(--igm-vis);
   width: calc(var(--scalefactor) * var(--screenHeight) * (588px / 2160)); /* modified to fit the other font */
   height: calc(var(--scalefactor) * var(--screenHeight) * (120px / 2160));
   overflow: hidden;

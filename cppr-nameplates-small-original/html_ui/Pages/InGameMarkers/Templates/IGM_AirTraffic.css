@@ -8,8 +8,7 @@
 
 :root {
   /* Needed to support UIMOD toggle compatibility */
-  --igm-block: block;
-  --igm-flex: flex;
+  --igm-vis: visible; /* Default state for visible */
 }
 
 igm-airtraffic-3d {
@@ -33,7 +32,8 @@ igm-airtraffic-3d {
   text-shadow: 0px 0px calc(var(--screenHeight) * (2px / 2160)) rgba(0, 0, 0, 0.4); /* "shine" of text to have better contrast to background (should be dark for light font color and bright for dark font color) */
 
   /* others */
-  display: var(--igm-flex);
+  display: flex;
+  visibility: var(--igm-vis);
   width: calc(var(--scalefactor) * var(--screenHeight) * (588px / 2160)); /* modified to fit the other font */
   height: calc(var(--scalefactor) * var(--screenHeight) * (120px / 2160));
   overflow: hidden;
